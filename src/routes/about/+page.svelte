@@ -191,27 +191,27 @@
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 lg:gap-12 gap-10"
       >
         <AboutCard
-          generation={'Generation I'}
+          title={'Generation I'}
           details={'The player had to voyage across the Kanto region to collect Pokémon. Their ultimate goal was to compete against Gym Leaders to earn badges, and subsequently challenge the Elite Four. You also took on Team Rocket, and generally had fun.'}
         />
         <AboutCard
-          generation={'Generation II'}
+          title={'Generation II'}
           details={'From the inclusion of unknown creatures in the anime, it was clear that Pokémon wasn not going to stop at the first generation of titles. More specifically, at the end of the first episode, screened in 1997, Ho-Oh was seen flying in the sky.'}
         />
         <AboutCard
-          generation={'Generation III'}
+          title={'Generation III'}
           details={'Pokémon had reached a peak, and interest was beginning to wane. Nonetheless, Pokémon Ruby and Sapphire proved commercially and critically successful. They were released on the Game Boy Advance (GBA) in Japan in 2002, and in other territories the following year.'}
         />
         <AboutCard
-          generation={'Generation IV'}
+          title={'Generation IV'}
           details={'Pokémon Ruby and Sapphire, plus FireRed and LeafGreen, had sold respectfully. But their DS successors, Pokémon Diamond and Pearl, exceeded expectations.'}
         />
         <AboutCard
-          generation={'Generation V'}
+          title={'Generation V'}
           details={'Pokémon Black and White took players to Unova. For the first time, the game world inspiration was taken away from Japan. Whereas previous regions had been modeled on Hokkaido, Kansai, and Kyushu, Unova was based on New York City.'}
         />
         <AboutCard
-          generation={'Generation VI'}
+          title={'Generation VI'}
           details={'Just a year after Pokémon Black 2 and White 2, the franchise was back and fresher than ever. It would be fair to say that Pokémon X and Y were something of a revolution in the brand history. Not only did they add 72 more Pokémon to the Pokédex.'}
         />
       </div>

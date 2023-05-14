@@ -1,9 +1,5 @@
 <script lang="ts">
-  interface Props {
-    generation: string;
-    details: string;
-  }
-  export let generation: string, details: string;
+  export let title: string, details: string;
 </script>
 
 <div class="flex p-4 shadow-md">
@@ -18,7 +14,7 @@
     <p
       class="font-semibold lg:text-2xl text-xl lg:leading-6 leading-5 text-gray-800 dark:text-white"
     >
-      {generation}
+      {title}
     </p>
     <p
       class="mt-2 font-normal text-base leading-6 text-gray-600 dark:text-gray-200"

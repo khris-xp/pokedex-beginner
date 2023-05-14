@@ -9,6 +9,8 @@
 <svelte:head>
   <title>{title}</title>
 </svelte:head>
-<Navbar />
-<slot />
-<Footer />
+<div class="p-8 max-w-6xl mx-auto">
+  <Navbar />
+  <slot />
+  <Footer />
+</div>
