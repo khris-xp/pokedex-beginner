@@ -16,9 +16,7 @@
       class="mr-3 h-6 sm:h-9"
       alt="Flowbite Logo"
     />
-    <span
-      class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
-    >
+    <span class="self-center whitespace-nowrap text-xl font-semibold">
       Pokedex Beginner
     </span>
   </NavBrand>
@@ -27,14 +25,14 @@
     <NavLi
       href="/"
       active={$page.url.pathname === '/' ? true : false}
-      class="text-lg"
-      activeClass="text-[#ffcb05]">Home</NavLi
+      nonActiveClass="text-lg text-gray-500 hover:text-hover-main-color"
+      activeClass="text-lg text-main-color hover:text-hover-main-color">Home</NavLi
     >
     <NavLi
       href="/about"
       active={$page.url.pathname === '/about' ? true : false}
-      class="text-lg"
-      activeClass="text-[#ffcb05]">About</NavLi
+      nonActiveClass="text-lg text-gray-500 hover:text-hover-main-color"
+      activeClass="text-lg text-main-color hover:text-hover-main-color">About</NavLi
     >
   </NavUl>
 </Navbar>

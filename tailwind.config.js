@@ -5,6 +5,12 @@ const config = {
   ],
 
   theme: {
+    colors: {
+      'main-color' : '#ffcb05',
+      'hover-main-color': '#c7a008',
+      'second-color': '#2a75bb',
+      'hover-second-color': '#3c5aa6',
+    },
     extend: {},
   },
 
