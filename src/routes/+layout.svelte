@@ -10,5 +10,7 @@
   <title>{title}</title>
 </svelte:head>
 <Navbar />
-<slot />
+<div class="mt-20 mb-40">
+  <slot />
+</div>
 <Footer />

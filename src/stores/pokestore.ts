@@ -3,6 +3,7 @@ import type { Writable } from "svelte/store";
 import type { IPokemon } from "../interfaces/pokemon";
 
 export const pokemons: Writable<IPokemon[]> = writable<IPokemon[]>([]);
+const pokemonDetails: { [key: string]: IPokemon } = {};
 
 const fetchAPI = async (): Promise<void> => {
     const url: string = `https://pokeapi.co/api/v2/pokemon?limit=150`;
@@ -18,5 +19,19 @@ const fetchAPI = async (): Promise<void> => {
     );
     pokemons.set(loadedPokemons);
 }
+
+export const getPokemonById = async (id: string) => {
+    if (pokemonDetails[id]) return pokemonDetails[id];
+    try {
+        const url: string = `https://pokeapi.co/api/v2/pokemon/${id}`;
+        const res: Response = await fetch(url);
+        const data = await res.json();
+        pokemonDetails[id] = data;
+        return data;
+    } catch (err) {
+        console.error(err);
+        return null;
+    }
+};
 
 fetchAPI();
