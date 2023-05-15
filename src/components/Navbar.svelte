@@ -24,11 +24,17 @@
   </NavBrand>
   <NavHamburger on:click={toggle} />
   <NavUl {hidden}>
-    <NavLi href="/" active={$page.url.pathname === '/' ? true : false}
-      >Home</NavLi
+    <NavLi
+      href="/"
+      active={$page.url.pathname === '/' ? true : false}
+      class="text-lg"
+      activeClass="text-[#ffcb05]">Home</NavLi
     >
-    <NavLi href="/about" active={$page.url.pathname === '/about' ? true : false}
-      >About</NavLi
+    <NavLi
+      href="/about"
+      active={$page.url.pathname === '/about' ? true : false}
+      class="text-lg"
+      activeClass="text-[#ffcb05]">About</NavLi
     >
   </NavUl>
 </Navbar>
