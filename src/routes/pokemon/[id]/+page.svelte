@@ -2,8 +2,9 @@
   import { page } from '$app/stores';
   import { getPokemonById } from '../../../stores/pokestore';
   import { onMount } from 'svelte';
+  import type { IPokemonDetails } from '../../../interfaces/pokemon';
 
-  let pokemon: any;
+  let pokemon: IPokemonDetails;
   const id: string = $page.params.id;
 
   onMount(async () => {
